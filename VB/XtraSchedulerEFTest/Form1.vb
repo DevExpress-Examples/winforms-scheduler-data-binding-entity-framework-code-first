@@ -15,7 +15,7 @@ Namespace XtraSchedulerEFTest
             schedulerStorage1.Appointments.ResourceSharing = True
             schedulerControl1.Storage.Resources.ColorSaving = ColorSavingType.ArgbColor
 
-            '            #Region "#appmappings"
+'            #Region "#appmappings"
             Me.schedulerStorage1.Appointments.Mappings.AllDay = "AllDay"
             Me.schedulerStorage1.Appointments.Mappings.AppointmentId = "UniqueID"
             Me.schedulerStorage1.Appointments.Mappings.Description = "Description"
@@ -29,13 +29,13 @@ Namespace XtraSchedulerEFTest
             Me.schedulerStorage1.Appointments.Mappings.Status = "Status"
             Me.schedulerStorage1.Appointments.Mappings.Subject = "Subject"
             Me.schedulerStorage1.Appointments.Mappings.Type = "Type"
-            '            #End Region ' #appmappings
-            '            #Region "#resmappings"
+'            #End Region ' #appmappings
+'            #Region "#resmappings"
             Me.schedulerStorage1.Resources.Mappings.Caption = "ResourceName"
             Me.schedulerStorage1.Resources.Mappings.Color = "Color"
             Me.schedulerStorage1.Resources.Mappings.Id = "ResourceID"
             Me.schedulerStorage1.Resources.Mappings.Image = "Image"
-            '            #End Region ' #resmappings 
+'            #End Region ' #resmappings 
 
             AddHandler schedulerControl1.Storage.AppointmentsChanged, AddressOf Storage_AppointmentsModified
             AddHandler schedulerControl1.Storage.AppointmentsInserted, AddressOf Storage_AppointmentsModified
@@ -45,8 +45,8 @@ Namespace XtraSchedulerEFTest
             schedulerControl1.Start = Date.Now.Date
         End Sub
 
-        Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
-            '            #Region "#datainit"
+        Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
+'            #Region "#datainit"
             Database.SetInitializer(New SchedulerContextSeedInilializer())
             context = New SchedulerContext()
 
@@ -54,9 +54,9 @@ Namespace XtraSchedulerEFTest
             context.EFAppointments.Load()
             context.EFResources.Load()
 
-            eFAppointmentBindingSource.DataSource = context.EFAppointments.Local.ToBindingList()
-            eFResourceBindingSource.DataSource = context.EFResources.Local.ToBindingList()
-            '            #End Region ' #datainit
+            eFAppointmentBindingSource.DataSource = context.EFAppointments.Local.ToBindingList(Of EFAppointment)()
+            eFResourceBindingSource.DataSource = context.EFResources.Local.ToBindingList(Of EFResource)()
+'            #End Region ' #datainit
 
         End Sub
 
@@ -72,5 +72,11 @@ Namespace XtraSchedulerEFTest
             apt.LabelKey = 5
             schedulerStorage1.Appointments.Add(apt)
         End Sub
+
+
+
+
+
+
     End Class
 End Namespace
