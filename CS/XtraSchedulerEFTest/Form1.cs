@@ -12,9 +12,8 @@ namespace XtraSchedulerEFTest
         {
             InitializeComponent();
 
-            schedulerStorage1.Appointments.CommitIdToDataSource = false;
             schedulerStorage1.Appointments.ResourceSharing = true;
-            schedulerControl1.Storage.Resources.ColorSaving = ColorSavingType.ArgbColor;
+            schedulerControl1.DataStorage.Resources.ColorSaving = ColorSavingType.ArgbColor;
 
             #region #appmappings
             this.schedulerStorage1.Appointments.Mappings.AllDay = "AllDay";
@@ -38,9 +37,9 @@ namespace XtraSchedulerEFTest
             this.schedulerStorage1.Resources.Mappings.Image = "Image";
             #endregion #resmappings 
 
-            schedulerControl1.Storage.AppointmentsChanged += Storage_AppointmentsModified;
-            schedulerControl1.Storage.AppointmentsInserted += Storage_AppointmentsModified;
-            schedulerControl1.Storage.AppointmentsDeleted += Storage_AppointmentsModified;
+            schedulerControl1.DataStorage.AppointmentsChanged += Storage_AppointmentsModified;
+            schedulerControl1.DataStorage.AppointmentsInserted += Storage_AppointmentsModified;
+            schedulerControl1.DataStorage.AppointmentsDeleted += Storage_AppointmentsModified;
 
             schedulerControl1.GroupType = SchedulerGroupType.Resource;            
             schedulerControl1.Start = DateTime.Now.Date;
@@ -76,11 +75,5 @@ namespace XtraSchedulerEFTest
             apt.LabelKey = 5;
             schedulerStorage1.Appointments.Add(apt);
         }
-
-
-
-
-
-
     }
 }
