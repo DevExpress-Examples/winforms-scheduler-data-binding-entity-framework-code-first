@@ -27,7 +27,7 @@
             Dim timeRuler1 As New DevExpress.XtraScheduler.TimeRuler()
             Dim timeRuler2 As New DevExpress.XtraScheduler.TimeRuler()
             Me.schedulerControl1 = New DevExpress.XtraScheduler.SchedulerControl()
-            Me.schedulerStorage1 = New DevExpress.XtraScheduler.SchedulerStorage(Me.components)
+            Me.schedulerStorage1 = New DevExpress.XtraScheduler.SchedulerDataStorage(Me.components)
             Me.eFAppointmentBindingSource = New System.Windows.Forms.BindingSource(Me.components)
             Me.eFResourceBindingSource = New System.Windows.Forms.BindingSource(Me.components)
             Me.panelControl1 = New DevExpress.XtraEditors.PanelControl()
@@ -47,7 +47,7 @@
             Me.schedulerControl1.Name = "schedulerControl1"
             Me.schedulerControl1.Size = New System.Drawing.Size(776, 466)
             Me.schedulerControl1.Start = New Date(1753, 1, 1, 0, 0, 0, 0)
-            Me.schedulerControl1.Storage = Me.schedulerStorage1
+            Me.schedulerControl1.DataStorage = Me.schedulerStorage1
             Me.schedulerControl1.TabIndex = 0
             Me.schedulerControl1.Text = "schedulerControl1"
             Me.schedulerControl1.Views.DayView.TimeRulers.Add(timeRuler1)
@@ -123,7 +123,7 @@
         #End Region
 
         Private schedulerControl1 As DevExpress.XtraScheduler.SchedulerControl
-        Private schedulerStorage1 As DevExpress.XtraScheduler.SchedulerStorage
+        Private schedulerStorage1 As DevExpress.XtraScheduler.SchedulerDataStorage
         Private panelControl1 As DevExpress.XtraEditors.PanelControl
         Private WithEvents btnCreateAppointment As DevExpress.XtraEditors.SimpleButton
         Private eFAppointmentBindingSource As System.Windows.Forms.BindingSource
