@@ -11,7 +11,6 @@ Namespace XtraSchedulerEFTest
         Public Sub New()
             InitializeComponent()
 
-            schedulerStorage1.Appointments.CommitIdToDataSource = False
             schedulerStorage1.Appointments.ResourceSharing = True
             schedulerControl1.Storage.Resources.ColorSaving = ColorSavingType.ArgbColor
 
@@ -54,9 +53,9 @@ Namespace XtraSchedulerEFTest
             context.EFAppointments.Load()
             context.EFResources.Load()
 
-            eFAppointmentBindingSource.DataSource = context.EFAppointments.Local.ToBindingList(Of EFAppointment)()
-            eFResourceBindingSource.DataSource = context.EFResources.Local.ToBindingList(Of EFResource)()
-'            #End Region ' #datainit
+            eFAppointmentBindingSource.DataSource = context.EFAppointments.Local.ToBindingList()
+            eFResourceBindingSource.DataSource = context.EFResources.Local.ToBindingList()
+            '            #End Region ' #datainit
 
         End Sub
 
