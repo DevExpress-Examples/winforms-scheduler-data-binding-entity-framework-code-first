@@ -1,3 +1,12 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [EFAppointment.cs](./CS/XtraSchedulerEFTest/EFAppointment.cs) (VB: [EFAppointment.vb](./VB/XtraSchedulerEFTest/EFAppointment.vb))
+* [EFResource.cs](./CS/XtraSchedulerEFTest/EFResource.cs) (VB: [EFResource.vb](./VB/XtraSchedulerEFTest/EFResource.vb))
+* [Form1.cs](./CS/XtraSchedulerEFTest/Form1.cs) (VB: [Form1.vb](./VB/XtraSchedulerEFTest/Form1.vb))
+* [Program.cs](./CS/XtraSchedulerEFTest/Program.cs) (VB: [Program.vb](./VB/XtraSchedulerEFTest/Program.vb))
+* [SchedulerContext.cs](./CS/XtraSchedulerEFTest/SchedulerContext.cs) (VB: [SchedulerContext.vb](./VB/XtraSchedulerEFTest/SchedulerContext.vb))
+<!-- default file list end -->
 # Entity Framework CodeFirst model for XtraScheduler data binding
 
 
