@@ -3,14 +3,12 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E4107)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# Entity Framework CodeFirst model for XtraScheduler data binding
+# WinForms Data Grid - Use Entity Framework Code First to bind to a data source
+
+This example demonstrates how to use Code First approach to create an appointment and resource model and bind it to a [SchedulerDataStorage](https://docs.devexpress.com/WindowsForms/DevExpress.XtraScheduler.SchedulerDataStorage).
 
 
-<p>This example illustrates how to create an appointment and resource model by using Code First development and then use the types defined in the model as data sources for the <a href="https://docs.devexpress.com/WindowsForms/DevExpress.XtraScheduler.SchedulerDataStorage">SchedulerDataStorage</a> component in the XtraScheduler WinForms application.</p>
-<p>The Color property of the Resource does not necessarily have to be split into ARGB components in the database. It is done in this project for illustrative purpose only. Note that the <a href="http://documentation.devexpress.com/#CoreLibraries/DevExpressXtraSchedulerResourceStorageBase_ColorSavingtopic"><u>ColorSaving</u></a> property determines how resource color value is interpreted.</p>
-<p>For a walkthrough on data binding with Windows Forms refer to the MSDN article <a href="http://msdn.microsoft.com/en-us/data/jj682076"><u>Entity Framework: Data Binding with Windows Forms</u></a>.</p>
-<p><strong>See also:</strong><strong><br /> </strong><a href="https://www.devexpress.com/Support/Center/p/E4504">E4504: How to bind SchedulerControl to Entity Framework by using Entity Data Model</a></p>
+## Documentation
 
-<br/>
-
-
+* [Entity Framework Code First](https://docs.devexpress.com/WindowsForms/11910/controls-and-libraries/scheduler/data-binding/data-sources/entity-framework-code-first)
+* [Scheduler Data Sources](https://docs.devexpress.com/WindowsForms/3289/controls-and-libraries/scheduler/data-binding/data-sources)
