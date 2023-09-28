@@ -5,7 +5,7 @@
 <!-- default badges end -->
 # WinForms Scheduler - Use Entity Framework Code First to bind to a data source
 
-This example demonstrates how to use Code First approach to create an appointment and resource model and bind it to a [SchedulerDataStorage](https://docs.devexpress.com/WindowsForms/DevExpress.XtraScheduler.SchedulerDataStorage).
+This example demonstrates how to use the Code First approach to create an appointment and a resource model and bind it to a [SchedulerDataStorage](https://docs.devexpress.com/WindowsForms/DevExpress.XtraScheduler.SchedulerDataStorage).
 
 
 ## Documentation
