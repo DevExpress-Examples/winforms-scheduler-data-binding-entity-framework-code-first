@@ -14,7 +14,7 @@ This example demonstrates how to use the Code First approach to create an appoin
 * [Entity Framework Code First](https://docs.devexpress.com/WindowsForms/11910/controls-and-libraries/scheduler/data-binding/data-sources/entity-framework-code-first)
 * [Scheduler Data Sources](https://docs.devexpress.com/WindowsForms/3289/controls-and-libraries/scheduler/data-binding/data-sources)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-scheduler-data-binding-entity-framework-code-first&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-scheduler-data-binding-entity-framework-code-first&~~~was_helpful=no)
 
